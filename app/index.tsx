@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { globalStyles } from "./styles/global-style";
 import { useTemp } from "../hooks/useTemp"
 
-const {number, setNumber, sumaNumber} = useTemp();
+const {number, setNumber, sumaNumber, restarNumber} = useTemp();
 
 const handleNumber = () => {
   sumaNumber();
@@ -21,7 +21,7 @@ const App = () => {
           </Text>
         </Pressable>
         <Pressable>
-          <Text style={globalStyles.button} onPress={() => console.log("+")}>
+          <Text style={globalStyles.button} onPress={restarNumber}>
             +
           </Text>
         </Pressable>

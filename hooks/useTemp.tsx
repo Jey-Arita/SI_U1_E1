@@ -8,8 +8,13 @@ export const useTemp = () => {
     const numero = parseInt(number) + 1
     console.log(numero);
   };
+
+  const restarNumber = () => {
+    const numero = parseInt(number) - 1
+    console.log(numero);
+  };
   return{
-    number, setNumber, sumaNumber
+    number, setNumber, sumaNumber, restarNumber
   }
 };
 
